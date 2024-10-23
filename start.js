@@ -5,7 +5,9 @@ module.exports = {
       method: "shell.run",
       params: {
         venv: "env",                // Edit this to customize the venv folder path
-        env: { },                   // Edit this to customize environment variables (see documentation)
+        env: {
+          "TRANSFORMERS_VERBOSITY": "info"
+        },                   // Edit this to customize environment variables (see documentation)
         path: "app",                // Edit this to customize the path to start the shell from
         message: [
           "python -m mochi_preview.gradio_ui --model_dir checkpoint"
@@ -14,7 +16,7 @@ module.exports = {
           // The regular expression pattern to monitor.
           // When this pattern occurs in the shell terminal, the shell will return,
           // and the script will go onto the next step.
-          "event": "/http:\/\/\\S+/",   
+          "event": "/http:\/\/[0-9.:]+/",   
 
           // "done": true will move to the next step while keeping the shell alive.
           // "kill": true will move to the next step after killing the shell.
