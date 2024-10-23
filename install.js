@@ -44,6 +44,7 @@ module.exports = {
       params: {
         path: "app",                // Edit this to customize the path to start the shell from
         message: "huggingface-cli download genmo/mochi-1-preview --local-dir checkpoint"
+      }
     },
     {
       method: "fs.link",
