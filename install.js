@@ -34,6 +34,18 @@ module.exports = {
       }
     },
     {
+      method: "shell.run",
+      params: {
+        message: "conda install -c conda-forge huggingface_hub"
+      }
+    },
+    {
+      method: "shell.run",
+      params: {
+        path: "app",                // Edit this to customize the path to start the shell from
+        message: "huggingface-cli download genmo/mochi-1-preview --local-dir checkpoint"
+    },
+    {
       method: "fs.link",
       params: {
         venv: "app/env"
