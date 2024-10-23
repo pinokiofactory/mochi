@@ -28,7 +28,7 @@ module.exports = {
         venv: "env",                // Edit this to customize the venv folder path
         path: "app",                // Edit this to customize the path to start the shell from
         message: [
-          "pip install wheel gradio devicetorch",
+          "pip install wheel gradio devicetorch flash-attn==2.6.3",
           "pip install -e . --no-build-isolation"
           //"pip install -r requirements.txt"
         ]
