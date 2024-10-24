@@ -10,7 +10,7 @@ module.exports = {
         },                   // Edit this to customize environment variables (see documentation)
         path: "app/src/mochi_preview",                // Edit this to customize the path to start the shell from
         message: [
-          "python gradio_ui --model_dir checkpoint"
+          "python gradio_ui.py --model_dir ../../checkpoint"
         ],
         on: [{
           // The regular expression pattern to monitor.
