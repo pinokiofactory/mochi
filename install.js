@@ -62,12 +62,12 @@ module.exports = {
         ]
       }
     },
-    {
-      method: "shell.run",
-      params: {
-        message: "conda install -y -c conda-forge huggingface_hub"
-      }
-    },
+//    {
+//      method: "shell.run",
+//      params: {
+//        message: "conda install -y -c conda-forge huggingface_hub"
+//      }
+//    },
     {
       method: "shell.run",
       params: {
