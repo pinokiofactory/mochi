@@ -14,7 +14,8 @@ module.exports = {
         message: [
           //"python gradio_ui.py --model_dir ../../checkpoint"
           //"python -m mochi_preview.gradio_ui --model_dir ../../checkpoint"
-          "python -m mochi_preview.gradio_ui --model_dir checkpoint"
+          //"python -m mochi_preview.gradio_ui --model_dir checkpoint"
+          "python demos/gradio_ui.py --model_dir checkpoint"
         ],
         on: [{
           // The regular expression pattern to monitor.
