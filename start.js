@@ -5,7 +5,7 @@ module.exports = {
       method: "shell.run",
       params: {
         //venv: "../../env",                // Edit this to customize the venv folder path
-        venv: "../env",
+        venv: "env",
         env: {
           "TRANSFORMERS_VERBOSITY": "info",
           "CUDA_VISIBLE_DEVICES": "0"

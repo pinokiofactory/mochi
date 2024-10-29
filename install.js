@@ -16,7 +16,7 @@ module.exports = {
         uri: "torch.js",
         params: {
           venv: "env",                // Edit this to customize the venv folder path
-          path: "app",                // Edit this to customize the path to start the shell from
+          path: "app/demos",                // Edit this to customize the path to start the shell from
           // xformers: true   // uncomment this line if your project requires xformers
         }
       }
