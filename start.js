@@ -5,17 +5,18 @@ module.exports = {
       method: "shell.run",
       params: {
         //venv: "../../env",                // Edit this to customize the venv folder path
-        venv: "env",
+        venv: "../env",
         env: {
-          "TRANSFORMERS_VERBOSITY": "info"
+          "TRANSFORMERS_VERBOSITY": "info",
+          "CUDA_VISIBLE_DEVICES": "0"
         },                   // Edit this to customize environment variables (see documentation)
         //path: "app/src/mochi_preview",                // Edit this to customize the path to start the shell from
-        path: "app",
+        path: "app/demos",
         message: [
           //"python gradio_ui.py --model_dir ../../checkpoint"
           //"python -m mochi_preview.gradio_ui --model_dir ../../checkpoint"
           //"python -m mochi_preview.gradio_ui --model_dir checkpoint"
-          "python demos/gradio_ui.py --model_dir checkpoint"
+          "python gradio_ui.py --model_dir ../checkpoint"
         ],
         on: [{
           // The regular expression pattern to monitor.
